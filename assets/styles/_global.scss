@@ -1,0 +1,31 @@
+html {
+  font-family: "Roboto", sans-serif;
+
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+
+  font-size: 10px;
+  @media (max-width: 992px) {
+    font-size: 8px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 0.525vw;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.layout--default {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

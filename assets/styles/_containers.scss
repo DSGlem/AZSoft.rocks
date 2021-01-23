@@ -1,0 +1,16 @@
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  @media screen and (min-width: 1200px) {
+    padding-left: calc(50vw - 594px);
+    padding-right: calc(50vw - 594px);
+  }
+  @media screen and (min-width: 1920px) {
+    padding-left: calc(50vw - 30.5vw);
+    padding-right: calc(50vw - 30.5vw);
+  }
+}
+.g-section {
+  padding-top: 12rem;
+  padding-bottom: 14rem;
+}

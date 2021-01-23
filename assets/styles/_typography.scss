@@ -1,0 +1,44 @@
+// hero title - 72px
+// hero text - 18px
+
+// section title - 48px
+// section subtitle - 24px
+// section text - 14px
+// section text-secondary - 16px
+
+// arrow links - 12px
+
+// card title - 18px
+// card text - 14px
+
+.title-primary {
+  font-size: 5.5em;
+  font-weight: 700;
+  line-height: 1em;
+  @media (min-width: 992px) {
+    font-size: 7.2em;
+  }
+  //   @media (min-width: 1920px) {
+  //     font-size: 3.8vw;
+  //   }
+}
+.g-title-secondary {
+  font-size: 3.8em;
+  font-weight: 700;
+  line-height: 1em;
+  @media (min-width: 992px) {
+    font-size: 4.8em;
+  }
+}
+
+.description-primary {
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1.55em;
+  //   @media (min-width: 1920px) {
+  //     font-size: 1vw;
+  //   }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
