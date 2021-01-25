@@ -8,8 +8,7 @@
       <template #prevArrow="arrowOption">
         <div class="custom-arrow custom-arrow-prev">
           <svg
-            width="41"
-            height="8"
+            class="responsive-img"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -19,15 +18,14 @@
               fill="#666666"
             />
           </svg>
-          {{ formatSliderVariables(arrowOption.currentSlide) }}
+          {{ getCurrentSlide(arrowOption.currentSlide) }}
         </div>
       </template>
       <template #nextArrow="arrowOption">
         <div class="custom-arrow custom-arrow-next">
-          / {{ formatSliderVariables(arrowOption.slideCount) }}
+          / {{ arrowOption.slideCount }}
           <svg
-            width="41"
-            height="8"
+            class="responsive-img"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -230,15 +228,17 @@ export default {
     };
   },
   methods: {
-    nextSlide() {
-      this.$refs.slider.next();
-      console.log(this.$refs.slider);
-    },
-    previousSlide() {
-      this.$refs.slider.prev();
-    },
-    formatSliderVariables(value) {
-      return value + 1;
+    getCurrentSlide(value) {
+      // this function needs for right CurrentSlide in different breakpoints
+      let slidesToShow = 3;
+      if (process.client) {
+        if (window.innerWidth <= 600) {
+          slidesToShow = 1;
+        } else if (window.innerWidth <= 1024) {
+          slidesToShow = 2;
+        }
+      }
+      return value + slidesToShow;
     },
   },
 };
@@ -278,6 +278,9 @@ $margin: 1.5rem;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1em;
+  svg {
+    width: 4rem;
+  }
   & path {
     fill: var(--color-font-accent);
   }
