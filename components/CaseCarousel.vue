@@ -1,5 +1,5 @@
 <template>
-  <div class="container g-section section">
+  <section class="container g-section section">
     <h3 class="g-title-secondary title">Our cases</h3>
     <VueSlickCarousel class="case-list" v-bind="settings" ref="slider">
       <div v-for="(item, index) in slides" :key="index">
@@ -38,7 +38,7 @@
         </div>
       </template>
     </VueSlickCarousel>
-  </div>
+  </section>
 </template>
 <script>
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
@@ -247,7 +247,7 @@ export default {
 $margin: 1.5rem;
 .section {
   width: 100%;
-  max-width: calc(100vw - 20px); // 20px = (10px padding in conatiner) * 2
+  max-width: calc(100vw - 16px); // 16px = 16px padding in conatiner
   color: var(--color-font-primary);
   background-image: url("~assets/images/cases/bg.jpg");
   background-size: cover;
