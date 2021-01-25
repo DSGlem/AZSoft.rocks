@@ -4,6 +4,7 @@
     <DevelopmentServices />
     <CaseCarousel></CaseCarousel>
     <BackEndTechnologies></BackEndTechnologies>
+    <DevelopmentArticles></DevelopmentArticles>
   </main>
 </template>
 
