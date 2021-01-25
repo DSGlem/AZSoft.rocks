@@ -1,8 +1,9 @@
 <template>
   <main>
     <BaseHero v-bind="hero"></BaseHero>
-    <BackEndServices />
+    <DevelopmentServices />
     <CaseCarousel></CaseCarousel>
+    <BackEndTechnologies></BackEndTechnologies>
   </main>
 </template>
 
