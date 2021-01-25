@@ -1,6 +1,6 @@
 <template>
   <div class="case-card">
-    <img class="background" :src="background.image" />
+    <img class="background" :src="background.image" loading="lazy" />
     <h6 class="hover-animation title">{{ title }}</h6>
     <p class="hover-animation description">{{ description }}</p>
     <div class="hover-animation icons">
@@ -10,6 +10,7 @@
         :key="index"
         :src="item.image"
         :alt="item.alt"
+        loading="lazy"
       />
     </div>
   </div>
