@@ -1,5 +1,5 @@
 <template>
-  <section class="container g-section section">
+  <section class="g-container g-section section">
     <div>
       <h2 class="g-title-secondary title">
         Backend<br />
@@ -33,14 +33,14 @@
     <div class="illustration">
       <div>
         <img
-          class="responsive-img"
+          class="g-img-contain"
           src="~/assets/images/back-end/services.png"
           alt="image with gadgets"
         />
       </div>
       <div class="g-description-secondary list">
         <div class="list__item" v-for="(item, index) in icons" :key="index">
-          <img class="responsive-img" :src="item.image" :alt="item.alt" />
+          <img class="g-img-contain" :src="item.image" :alt="item.alt" />
           <span>{{ item.label }}</span>
         </div>
       </div>

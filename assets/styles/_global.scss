@@ -24,8 +24,15 @@ html {
   margin: 0;
 }
 
-.layout--default {
+.g-layout {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
+  .g-main {
+    flex: 1 0 auto;
+  }
+  .g-footer,
+  .g-header {
+    flex: 0 0 auto;
+  }
 }

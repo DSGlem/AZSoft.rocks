@@ -1,6 +1,5 @@
 <template>
   <div class="g-layout">
-    <BaseHeader class="g-header" />
     <Nuxt class="g-main" />
     <BaseFooter class="g-footer" />
   </div>

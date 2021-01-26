@@ -1,8 +1,8 @@
 <template>
-  <footer class="container header">
+  <footer class="g-container footer">
     <div class="social-list">
       <NuxtLink v-for="(item, index) in social" :key="index" :to="item.link">
-        <img class="responsive-img" :src="item.image" :alt="item.alt" />
+        <img class="g-img-contain" :src="item.image" :alt="item.alt" />
       </NuxtLink>
     </div>
     <p class="copyright">© 2021. AZsoft.rock</p>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
+.footer {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 

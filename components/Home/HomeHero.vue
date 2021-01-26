@@ -1,8 +1,8 @@
 <template>
-  <section class="container g-section section">
+  <section class="g-container g-section section">
     <div class="logo">
       <img
-        class="responsive-img"
+        class="g-img-contain"
         src="~/assets/images/icons/logo.svg"
         alt="AZSoft logo"
       />
@@ -35,7 +35,7 @@
       <template #prevArrow>
         <div class="custom-arrow custom-arrow-prev">
           <svg
-            class="responsive-img"
+            class="g-img-contain"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@
       <template #nextArrow>
         <div class="custom-arrow custom-arrow-next">
           <svg
-            class="responsive-img"
+            class="g-img-contain"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,19 +64,21 @@
       </template>
     </VueSlickCarousel>
 
-    <h1 class="title-primary title">Software Development</h1>
-    <p class="description-primary description">
+    <h1 class="g-title-primary title">Software Development</h1>
+    <p class="g-description-primary description">
       Custom software products and services are our specialty, and we will
       ensure that your project receives the highest level of attention and
       customer care. Our job isn't done until you're satisfied with your online
       presence. For more details, don't wait!
     </p>
     <div class="link">
-      <a href="#contact" class="btn btn--accent text-uppercase"> CONTACT US </a>
+      <a href="#contact" class="btn btn--accent g-text-uppercase">
+        CONTACT US
+      </a>
     </div>
     <div class="scroll-icon">
       <img
-        class="responsive-img"
+        class="g-img-contain"
         src="~/assets/images/icons/mouse.svg"
         alt="scroll icon"
       />

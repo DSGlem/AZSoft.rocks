@@ -1,5 +1,5 @@
 <template>
-  <section class="container g-section section">
+  <section class="g-container g-section section">
     <h3 class="title">Back-End development articles</h3>
     <CustomLink to="/" class="custom-link">Go to Blog</CustomLink>
     <div class="list">

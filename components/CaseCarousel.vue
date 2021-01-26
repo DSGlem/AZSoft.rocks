@@ -1,5 +1,5 @@
 <template>
-  <section class="container g-section section">
+  <section class="g-container g-section section">
     <h3 class="g-title-secondary title">Our cases</h3>
     <VueSlickCarousel class="case-list" v-bind="settings" ref="slider">
       <div v-for="(item, index) in slides" :key="index">
@@ -8,7 +8,7 @@
       <template #prevArrow="arrowOption">
         <div class="custom-arrow custom-arrow-prev">
           <svg
-            class="responsive-img"
+            class="g-img-contain"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
         <div class="custom-arrow custom-arrow-next">
           / {{ arrowOption.slideCount }}
           <svg
-            class="responsive-img"
+            class="g-img-contain"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

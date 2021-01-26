@@ -5,7 +5,7 @@
     <p class="hover-animation description">{{ description }}</p>
     <div class="hover-animation icons">
       <img
-        class="responsive-img"
+        class="g-img-contain"
         v-for="(item, index) in icons"
         :key="index"
         :src="item.image"

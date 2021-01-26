@@ -1,18 +1,18 @@
 <template>
   <section
-    class="container hero"
+    class="g-container hero"
     :style="{
       backgroundImage: `url(${background.image})`,
       backgroundColor: `${background.color}`,
     }"
   >
     <div class="text-content">
-      <h1 v-if="title" class="title-primary">{{ title }}</h1>
-      <p v-if="description" class="description-primary description">
+      <h1 v-if="title" class="g-title-primary">{{ title }}</h1>
+      <p v-if="description" class="g-description-primary description">
         {{ description }}
       </p>
       <div v-if="link" class="link">
-        <NuxtLink :to="link.to" class="btn btn--accent text-uppercase">{{
+        <NuxtLink :to="link.to" class="btn btn--accent g-text-uppercase">{{
           link.name
         }}</NuxtLink>
       </div>
@@ -20,7 +20,7 @@
     <div class="image">
       <img
         v-if="image"
-        class="responsive-img"
+        class="g-img-contain"
         :src="image.src"
         :alt="image.alt"
       />

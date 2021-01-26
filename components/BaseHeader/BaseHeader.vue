@@ -1,5 +1,5 @@
 <template>
-  <header class="container header">
+  <header class="g-container header">
     <div class="logo">
       <img src="@/assets/images/icons/logo.svg" alt="AZSOft.rocks logo" />
     </div>
@@ -7,14 +7,14 @@
     <div class="menu-icon menu-toggle" @click="isOpen = !isOpen">
       <template v-if="isOpen">
         <img
-          class="responsive-img"
+          class="g-img-contain"
           src="@/assets/images/icons/close.svg"
           alt="menu's close icon"
         />
       </template>
       <template v-else-if="!isOpen">
         <img
-          class="responsive-img"
+          class="g-img-contain"
           src="@/assets/images/icons/open.svg"
           alt="menu's open icon"
         />
