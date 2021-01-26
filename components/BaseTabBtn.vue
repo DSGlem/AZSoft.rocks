@@ -58,8 +58,9 @@ export default {
 
     display: block;
     width: 100%;
-    height: 0.5rem;
+    height: 0.3rem;
     background-color: var(--color-font-accent);
+    border-radius: 0.5rem;
 
     transform: translateY(-1.1rem);
   }

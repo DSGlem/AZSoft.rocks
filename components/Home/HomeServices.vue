@@ -1,6 +1,6 @@
 <template>
   <section class="g-container g-section section">
-    <h3 class="g-title-secondary title">Services</h3>
+    <h3 class="g-title-secondary title">Blog</h3>
 
     <client-only>
       <VueSlickCarousel class="slider" v-bind="settings">
@@ -143,6 +143,19 @@ export default {
 
     display: flex;
     justify-content: space-between;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: #f7f7f7;
+      transform: translateY(
+        -1.1rem
+      ); //1.1rem is height of triangle on active tab
+    }
   }
   //   max-width: 68.2rem;
 }
@@ -186,6 +199,8 @@ export default {
   transform: translate(100%, 100%);
 }
 .tab-wrapper {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
