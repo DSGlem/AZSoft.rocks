@@ -8,61 +8,65 @@
       />
     </div>
 
-    <VueSlickCarousel class="slider" v-bind="settings">
-      <NuxtLink class="slider__item g-link" to="/about">About us</NuxtLink>
-      <span class="slider__item dropdown g-link">
-        <NuxtLink class="dropdown-label" to="/services">Services</NuxtLink>
-        <span class="dropdown-body">
-          <NuxtLink class="dropdown-body__item g-link" to="/back-end"
-            >Backend development</NuxtLink
-          >
-          <NuxtLink class="dropdown-body__item g-link" to="/back-end"
-            >Frontend development</NuxtLink
-          >
-          <NuxtLink class="dropdown-body__item g-link" to="/back-end"
-            >Design</NuxtLink
-          >
-          <NuxtLink class="dropdown-body__item g-link" to="/back-end"
-            >App’s development</NuxtLink
-          >
+    <client-only>
+      <VueSlickCarousel class="slider" v-bind="settings">
+        <NuxtLink class="slider__item g-link" to="/about">About us</NuxtLink>
+        <span class="slider__item dropdown g-link">
+          <NuxtLink class="dropdown-label" to="/services">Services</NuxtLink>
+          <span class="dropdown-body">
+            <NuxtLink class="dropdown-body__item g-link" to="/back-end"
+              >Backend development</NuxtLink
+            >
+            <NuxtLink class="dropdown-body__item g-link" to="/back-end"
+              >Frontend development</NuxtLink
+            >
+            <NuxtLink class="dropdown-body__item g-link" to="/back-end"
+              >Design</NuxtLink
+            >
+            <NuxtLink class="dropdown-body__item g-link" to="/back-end"
+              >App’s development</NuxtLink
+            >
+          </span>
         </span>
-      </span>
-      <NuxtLink class="slider__item g-link" to="/stories"
-        >Success stories</NuxtLink
-      >
-      <NuxtLink class="slider__item g-link" to="/blog">Blog</NuxtLink>
-      <NuxtLink class="slider__item g-link" to="/contact">Contact us</NuxtLink>
-      <template #prevArrow>
-        <div class="custom-arrow custom-arrow-prev">
-          <svg
-            class="g-img-contain"
-            viewBox="0 0 41 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659725 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM41 3.5L1 3.5L1 4.5L41 4.5L41 3.5Z"
-              fill="#666666"
-            />
-          </svg>
-        </div>
-      </template>
-      <template #nextArrow>
-        <div class="custom-arrow custom-arrow-next">
-          <svg
-            class="g-img-contain"
-            viewBox="0 0 41 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
-              fill="#FF4471"
-            />
-          </svg>
-        </div>
-      </template>
-    </VueSlickCarousel>
+        <NuxtLink class="slider__item g-link" to="/stories"
+          >Success stories</NuxtLink
+        >
+        <NuxtLink class="slider__item g-link" to="/blog">Blog</NuxtLink>
+        <NuxtLink class="slider__item g-link" to="/contact"
+          >Contact us</NuxtLink
+        >
+        <template #prevArrow>
+          <div class="custom-arrow custom-arrow-prev">
+            <svg
+              class="g-img-contain"
+              viewBox="0 0 41 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659725 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM41 3.5L1 3.5L1 4.5L41 4.5L41 3.5Z"
+                fill="#666666"
+              />
+            </svg>
+          </div>
+        </template>
+        <template #nextArrow>
+          <div class="custom-arrow custom-arrow-next">
+            <svg
+              class="g-img-contain"
+              viewBox="0 0 41 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                fill="#FF4471"
+              />
+            </svg>
+          </div>
+        </template>
+      </VueSlickCarousel>
+    </client-only>
 
     <h1 class="g-title-primary title">Software Development</h1>
     <p class="g-description-primary description">
