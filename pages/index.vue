@@ -1,7 +1,8 @@
 <template>
   <main>
     <HomeHero />
-    <!-- <CaseCarousel /> -->
+    <HomeServices />
+    <CaseCarousel />
   </main>
 </template>
 
