@@ -81,9 +81,12 @@ export default {
   border-radius: 1.5rem;
 
   color: black;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 1em;
   text-decoration: unset;
+  @media (min-width: 992px) {
+    font-size: 1.2rem;
+  }
 }
 .icon {
   grid-column: 1/2;

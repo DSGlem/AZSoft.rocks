@@ -36,3 +36,7 @@ html {
     flex: 0 0 auto;
   }
 }
+
+.slick-slide *:focus {
+  outline: none;
+}
