@@ -5,6 +5,7 @@
     <CaseCarousel />
     <HomeBlog />
     <HomeAbout />
+    <HomeTeam />
   </main>
 </template>
 
