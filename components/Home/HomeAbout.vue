@@ -40,6 +40,7 @@
 
 <style lang="scss" scoped>
 .section {
+  padding-bottom: 23rem;
   color: var(--color-font-primary);
   background: url("~assets/images/home/bg-about.jpg");
   background-size: cover;
