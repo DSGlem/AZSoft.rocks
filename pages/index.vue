@@ -4,6 +4,7 @@
     <HomeServices />
     <CaseCarousel />
     <HomeBlog />
+    <HomeAbout />
   </main>
 </template>
 
