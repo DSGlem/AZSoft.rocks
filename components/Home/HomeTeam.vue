@@ -95,7 +95,7 @@ export default {
 }
 .section-wrapper {
   position: absolute;
-  top: 0%;
+  top: 50%;
   left: 0;
   transform: translateY(-45%);
   width: 100%;
@@ -146,10 +146,10 @@ export default {
 }
 .custom-arrow-prev {
   left: 0;
-  transform: translate(-100%, 100%);
+  transform: translate(-100%, -100%);
 }
 .custom-arrow-next {
   right: 0;
-  transform: translate(100%, 100%);
+  transform: translate(100%, -100%);
 }
 </style>

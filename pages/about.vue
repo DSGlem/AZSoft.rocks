@@ -1,6 +1,7 @@
 <template>
   <main>
     <BaseHero v-bind="hero"></BaseHero>
+    <AboutTeam />
   </main>
 </template>
 
