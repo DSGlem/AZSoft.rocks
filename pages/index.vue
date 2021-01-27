@@ -3,6 +3,7 @@
     <HomeHero />
     <HomeServices />
     <CaseCarousel />
+    <HomeBlog />
   </main>
 </template>
 
