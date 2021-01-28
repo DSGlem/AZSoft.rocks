@@ -4,5 +4,7 @@
     <BackendSnapshots />
     <BackendQuote />
     <BackendPosts />
+    <BackendBenefits />
+    <BackendOutcomes />
   </main>
 </template> 
