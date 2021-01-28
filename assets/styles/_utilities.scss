@@ -27,3 +27,20 @@
   display: block;
   object-fit: cover;
 }
+
+.g_list--line {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 2rem;
+      width: 4.5rem;
+      height: 0.2rem;
+      background-color: var(--color-font-accent);
+    }
+  }
+}
