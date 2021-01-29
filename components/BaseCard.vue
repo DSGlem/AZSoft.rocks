@@ -20,7 +20,7 @@ export default {
 .link {
   margin-top: 2.8rem;
   display: block;
-  color: #000;
+  color: inherit;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1em;

@@ -1,46 +1,57 @@
 <template>
-  <section class="g-container g-section section">
-    <div class="section__header">
-      <h1 class="g-title-primary title">Blog</h1>
-      <div class="list">
-        <button
-          class="option"
-          :class="{ active: item.value === currentOption }"
-          v-for="(item, index) in options"
-          :key="index"
-          @click="currentOption = item.value"
-        >
-          {{ item.title }}
-        </button>
+  <div>
+    <section class="g-container g-section section">
+      <div class="section__header">
+        <h1 class="g-title-primary title">Blog</h1>
+        <div class="list">
+          <button
+            class="option"
+            :class="{ active: item.value === currentOption }"
+            v-for="(item, index) in options"
+            :key="index"
+            @click="currentOption = item.value"
+          >
+            {{ item.title }}
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="post">
-      <div class="post__image">
-        <NuxtLink to="/blog-article">
-          <img
-            class="g-img-cover"
-            src="~/assets/images/blog/hero.jpg"
-            alt="Cyber Resilience & Security-by-Design"
-          />
-        </NuxtLink>
+      <div class="post">
+        <div class="post__image">
+          <NuxtLink to="/blog-article">
+            <img
+              class="g-img-cover"
+              src="~/assets/images/blog/hero.jpg"
+              alt="Cyber Resilience & Security-by-Design"
+            />
+          </NuxtLink>
+        </div>
+        <p>
+          <CustomLink to="/design">Design</CustomLink>
+          <NuxtLink class="post__title" to="/blog-article">
+            Cyber Resilience & Security-by-Design: The New Approach to
+            Cybersecurity
+          </NuxtLink>
+          <span class="post__description">
+            Cybersecurity has holistically been a well-funded and highly
+            prioritized process at most organizations to protect enterprise
+            systems against cyber threats. However, in recent years, the
+            instance of cyber-attacks and their impact on businesses has
+            increased significantly.
+          </span>
+        </p>
       </div>
-      <p>
-        <CustomLink to="/design">Design</CustomLink>
-        <NuxtLink class="post__title" to="/blog-article">
-          Cyber Resilience & Security-by-Design: The New Approach to
-          Cybersecurity
-        </NuxtLink>
-        <span class="post__description">
-          Cybersecurity has holistically been a well-funded and highly
-          prioritized process at most organizations to protect enterprise
-          systems against cyber threats. However, in recent years, the instance
-          of cyber-attacks and their impact on businesses has increased
-          significantly.
-        </span>
-      </p>
-    </div>
-  </section>
+    </section>
+    <section class="g-container category">
+      <div class="categories-list">
+        <BaseArticle
+          v-for="(item, index) in articles"
+          :key="index"
+          v-bind="item"
+        ></BaseArticle>
+      </div>
+    </section>
+  </div>
 </template>
 <script>
 export default {
@@ -52,13 +63,62 @@ export default {
         { title: "Popular publications", value: 2 },
         { title: "Collections", value: 3 },
       ],
+      articles: [
+        {
+          category: {
+            link: "/",
+            title: "Backend technology",
+          },
+          image: {
+            link: require("~/assets/images/articles/article-1.jpg"),
+            alt: "article image",
+          },
+          article: {
+            text:
+              'The profession of "colorist": how to make the viewer believe the picture with the help of color',
+            link: "/",
+          },
+        },
+        {
+          category: {
+            link: "/",
+            title: "Frontend technology",
+          },
+          image: {
+            link: require("~/assets/images/articles/article-2.jpg"),
+            alt: "article image",
+          },
+          article: {
+            text:
+              'The profession of "colorist": how to make the viewer believe the picture with the help of color',
+            link: "/",
+          },
+        },
+        {
+          category: {
+            link: "/",
+            title: "Applications world",
+          },
+          image: {
+            link: require("~/assets/images/articles/article-3.jpg"),
+            alt: "article image",
+          },
+          article: {
+            text:
+              'The profession of "colorist": how to make the viewer believe the picture with the help of color',
+            link: "/",
+          },
+        },
+      ],
     };
   },
 };
 </script>
 <style lang="scss" scoped>
 .section {
+  position: relative;
   padding-top: 21.6rem;
+  padding-bottom: 19rem;
   background-image: url("~assets/images/blog/bg-hero.jpg");
   background-size: cover;
 }
@@ -77,6 +137,7 @@ export default {
   display: grid;
   gap: 1rem 8.8rem;
   justify-items: left;
+
   @media (min-width: 768px) {
     grid-auto-flow: column;
   }
@@ -86,10 +147,12 @@ export default {
 }
 .option {
   color: var(--color-font-primary);
+  font-size: 1.6rem;
 
   transition: color ease-in 0.3s;
   background-color: unset;
   border: none;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -102,7 +165,7 @@ export default {
   margin-top: 6rem;
   display: grid;
   gap: 3rem 5em;
-  padding: 3rem;
+  padding: 6rem 3rem;
   background-color: var(--color-bg-secondary);
   @media (min-width: 992px) {
     grid-template-columns: 50% 1fr;
@@ -138,6 +201,24 @@ export default {
   line-height: 1.375em;
   @media (min-width: 992px) {
     margin-top: 4rem;
+  }
+}
+.category {
+  max-height: calc(100% - 5rem);
+}
+.categories-list {
+  transform: translateY(-19rem);
+  bottom: 0;
+  padding: 6rem 3rem;
+  display: grid;
+  gap: 3rem;
+
+  background-color: #f0f0f0;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 992px) {
+    padding: 7.6rem 10.5rem;
   }
 }
 </style>
