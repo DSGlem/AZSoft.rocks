@@ -95,7 +95,7 @@ export default {
 }
 .section-wrapper {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   transform: translateY(-45%);
   width: 100%;
@@ -121,7 +121,7 @@ export default {
 }
 .custom-arrow {
   position: absolute;
-  top: 0%;
+  top: 50%;
   width: 4rem;
   height: 1rem;
 
