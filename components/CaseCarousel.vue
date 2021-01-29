@@ -248,8 +248,6 @@ export default {
 <style lang="scss" scoped>
 $margin: 1.5rem;
 .section {
-  width: 100%;
-  max-width: calc(100vw - 16px); // 16px = 16px padding in conatiner
   color: var(--color-font-primary);
   background-image: url("~assets/images/cases/bg.jpg");
   background-size: cover;
