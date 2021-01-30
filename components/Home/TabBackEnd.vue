@@ -9,7 +9,7 @@
           <span>{{ item.label }}</span>
         </div>
       </div>
-      <NuxtLink to="\" class="link">Read more</NuxtLink>
+      <NuxtLink to="/" class="link">Read more</NuxtLink>
     </div>
     <div>
       <img class="g-img-cover image" :src="image.link" :alt="image.alt" />
