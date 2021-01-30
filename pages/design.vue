@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       hero: {
-        title: "Backend Development",
+        title: "Design",
         description:
           "Custom software products and services are our specialty, and we will ensure that your project receives the highest level of attention and customer care. Our job isn't done until you're satisfied with your online presence. For more details, don't wait!",
         link: { name: "See cases", to: "/" },
