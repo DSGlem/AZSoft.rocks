@@ -122,7 +122,7 @@ export default {
         {
           category: {
             title: "Backend technology",
-            link: "/bac-kend",
+            link: "/back-end",
           },
           image: {
             link: require("~/assets/images/articles/article-1.jpg"),

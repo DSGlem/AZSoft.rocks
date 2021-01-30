@@ -27,6 +27,7 @@ export default {
   display: grid;
   grid-template-areas: "icon text";
   grid-template-columns: 2rem auto;
+  grid-template-rows: 1.2rem;
   column-gap: 1.4rem;
   grid-auto-flow: column;
   align-items: center;

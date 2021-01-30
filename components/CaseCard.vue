@@ -102,6 +102,7 @@ export default {
 .icons {
   height: 100%;
   display: grid;
+  grid-template-rows: 2.6rem 2.6rem;
   row-gap: 1.1rem;
 }
 .background {

@@ -5,7 +5,7 @@
     <div class="icon">
       <slot></slot>
     </div>
-    <NuxtLink to="\" class="link hover-animation">Read more</NuxtLink>
+    <NuxtLink to="/" class="link hover-animation">Read more</NuxtLink>
   </div>
 </template>
 <script>

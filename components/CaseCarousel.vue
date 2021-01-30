@@ -253,6 +253,7 @@ $margin: 1.5rem;
   background-size: cover;
 }
 .case-list {
+  position: relative;
   padding-top: 6.6rem;
   margin-left: -$margin;
   width: calc(100% + #{$margin * 2});
@@ -280,6 +281,7 @@ $margin: 1.5rem;
   line-height: 1em;
   svg {
     width: 4rem;
+    height: 2rem;
   }
   & path {
     fill: var(--color-font-accent);
