@@ -23,6 +23,7 @@
         class="g-img-contain"
         :src="image.src"
         :alt="image.alt"
+        loading="eager"
       />
     </div>
   </section>

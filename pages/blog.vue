@@ -2,7 +2,7 @@
   <main>
     <BlogHero />
     <BlogSection
-      class="c-section"
+      class="blog-section"
       v-for="(item, index) in sections"
       :key="index"
       :list="item.articles"
@@ -216,7 +216,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.c-section {
+.blog-section {
   .card .list {
     color: inherit;
   }

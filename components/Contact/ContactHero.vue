@@ -1,7 +1,7 @@
 <template>
-  <section id="contact" class="g-container g-section section">
+  <section class="g-container g-section section">
     <div class="info">
-      <h2 class="g-title-secondary">Contact us</h2>
+      <h2 class="g-title-secondary">Get in toch</h2>
       <div class="address">
         <p class="item">
           <span
@@ -45,16 +45,22 @@
 </template>
 <style lang="scss" scoped>
 .section {
+  width: 100%;
+  min-height: 992px;
+  padding-top: 21.4rem;
+  padding-bottom: 21.4rem;
+
   color: var(--color-font-primary);
   font-size: 14px;
   line-height: 1em;
-  background-image: url("~assets/images/bg-contact.jpg");
+  background-image: url("~assets/images/contact/bg-hero.jpg");
   background-size: cover;
   background-position: center;
 
   display: grid;
   gap: 6rem;
   @media (min-width: 768px) {
+    flex: 1 0 auto;
     font-size: 1.4rem;
     grid-template-columns: auto minmax(1rem, 26.8rem);
     justify-content: space-between;
@@ -65,7 +71,7 @@
   display: grid;
   gap: 1rem;
   @media (min-width: 768px) {
-    margin-top: 7rem;
+    margin-top: 16rem;
   }
 }
 .item {
@@ -75,6 +81,7 @@
   gap: 2rem 3rem;
 }
 .form {
+  align-self: end;
   font-size: 14px;
   line-height: 1em;
   @media (min-width: 992px) {
