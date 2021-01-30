@@ -1,7 +1,9 @@
 <template>
   <header class="g-container header">
     <div class="logo">
-      <img src="@/assets/images/icons/logo.svg" alt="AZSOft.rocks logo" />
+      <NuxtLink to="/">
+        <img src="@/assets/images/icons/logo.svg" alt="AZSOft.rocks logo" />
+      </NuxtLink>
     </div>
     <BaseMenu :isOpen="isOpen"></BaseMenu>
     <div class="menu-icon menu-toggle" @click="isOpen = !isOpen">
@@ -30,6 +32,11 @@ export default {
       isOpen: false,
     };
   },
+  watch: {
+    $route() {
+      this.isOpen = false;
+    },
+  },
 };
 </script>
 
@@ -40,7 +47,7 @@ export default {
 }
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   width: 100%;
   padding-top: 5.2rem;

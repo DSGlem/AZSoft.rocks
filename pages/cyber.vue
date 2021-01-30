@@ -1,0 +1,12 @@
+<template>
+  <main class="cyber">
+    <CyberHero />
+    <CyberContent />
+    <CyberFooter />
+  </main>
+</template>
+<style lang="scss" scoped>
+.cyber {
+  background-color: #f6f6f6;
+}
+</style>

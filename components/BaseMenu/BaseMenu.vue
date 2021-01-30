@@ -3,7 +3,7 @@
     <div class="menu-wrapper">
       <div class="nav-list">
         <NuxtLink class="link nav-list__link" to="/about">About</NuxtLink>
-        <NuxtLink class="link nav-list__link" to="/stories"
+        <NuxtLink class="link nav-list__link" to="/cases"
           >Success stories</NuxtLink
         >
         <NuxtLink class="link nav-list__link" to="/blog">Blog</NuxtLink>

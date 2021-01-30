@@ -44,3 +44,36 @@
     }
   }
 }
+.g_list--decimal {
+  counter-reset: list-decimal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    $width: 3rem; // size list counter
+    $margin: 2rem; // space between list counter and text
+    position: relative;
+    padding-left: calc(#{$width} + #{$margin});
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      counter-increment: list-decimal;
+
+      content: counter(list-decimal);
+
+      width: $width;
+      height: $width;
+
+      display: inline-block;
+
+      color: #000;
+      font-weight: 700;
+      line-height: $width;
+      text-align: center;
+
+      border: 0.1rem solid #000;
+    }
+  }
+}

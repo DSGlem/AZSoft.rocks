@@ -2,6 +2,7 @@
   <main>
     <BaseHero v-bind="hero"></BaseHero>
     <AboutTeam />
+    <BaseContact />
   </main>
 </template>
 

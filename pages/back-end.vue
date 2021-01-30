@@ -5,6 +5,7 @@
     <CaseCarousel></CaseCarousel>
     <BackEndTechnologies></BackEndTechnologies>
     <DevelopmentArticles></DevelopmentArticles>
+    <BaseContact />
   </main>
 </template>
 
