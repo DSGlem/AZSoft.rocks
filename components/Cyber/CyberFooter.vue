@@ -104,7 +104,10 @@ export default {
 <style lang="scss">
 .c-article {
   .description {
-    color: white;
+    color: white !important;
+    &:hover {
+      color: var(--color-font-accent) !important;
+    }
   }
 }
 </style>
