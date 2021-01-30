@@ -3,6 +3,7 @@
     <CyberHero />
     <CyberContent />
     <CyberFooter />
+    <BaseContact />
   </main>
 </template>
 <style lang="scss" scoped>
