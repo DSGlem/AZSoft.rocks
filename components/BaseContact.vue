@@ -1,5 +1,5 @@
 <template>
-  <section class="g-container g-section section">
+  <section id="contact" class="g-container g-section section">
     <div class="info">
       <h2 class="g-title-secondary">Contact us</h2>
       <div class="address">
