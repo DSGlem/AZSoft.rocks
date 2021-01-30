@@ -18,7 +18,7 @@
 
       <div class="post">
         <div class="post__image">
-          <NuxtLink to="/blog-article">
+          <NuxtLink to="/cyber">
             <img
               class="g-img-cover"
               src="~/assets/images/blog/hero.jpg"
@@ -28,7 +28,7 @@
         </div>
         <p>
           <CustomLink to="/design">Design</CustomLink>
-          <NuxtLink class="post__title" to="/blog-article">
+          <NuxtLink class="post__title" to="/cyber">
             Cyber Resilience & Security-by-Design: The New Approach to
             Cybersecurity
           </NuxtLink>
