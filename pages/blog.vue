@@ -10,6 +10,7 @@
       :link="item.link"
       :colors="item.colors"
     />
+    <BaseContact />
   </main>
 </template>
 <script>

@@ -6,5 +6,6 @@
     <BackendPosts />
     <BackendBenefits />
     <BackendOutcomes />
+    <BaseContact />
   </main>
 </template> 

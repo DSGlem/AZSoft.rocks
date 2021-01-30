@@ -6,6 +6,7 @@
     <HomeBlog />
     <HomeAbout />
     <HomeTeam />
+    <BaseContact />
   </main>
 </template>
 
