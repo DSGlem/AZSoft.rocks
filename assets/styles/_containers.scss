@@ -11,6 +11,10 @@
   }
 }
 .g-section {
-  padding-top: 12rem;
-  padding-bottom: 14rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  @media (min-width: 992px) {
+    padding-top: 12rem;
+    padding-bottom: 14rem;
+  }
 }
