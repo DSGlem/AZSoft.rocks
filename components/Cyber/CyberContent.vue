@@ -333,6 +333,7 @@ export default {
   display: grid;
   align-items: center;
   width: 3.5rem;
+  height: 3.5rem;
   padding: 0 0.8rem;
   border-left: 0.1rem solid rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
