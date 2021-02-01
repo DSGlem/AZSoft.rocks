@@ -12,7 +12,7 @@
       <VueSlickCarousel class="slider" v-bind="settings">
         <NuxtLink class="slider__item g-link" to="/about">About us</NuxtLink>
         <span class="slider__item dropdown g-link">
-          <NuxtLink class="dropdown-label" to="/services">Services</NuxtLink>
+          <span class="dropdown-label">Services</span>
           <span class="dropdown-body">
             <NuxtLink class="dropdown-body__item g-link" to="/back-end"
               >Backend development</NuxtLink
