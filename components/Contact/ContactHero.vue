@@ -36,9 +36,9 @@
         Leave your contact information and we will contact you within a few
         minutes
       </p>
-      <div class="c-input">
+      <label class="c-input">
         <input type="text" placeholder="Your phone number" />
-      </div>
+      </label>
       <button class="btn c-btn" type="button">Сall me back</button>
     </div>
   </section>
@@ -112,6 +112,7 @@
   }
 }
 .c-input {
+  display: block;
   margin-top: 2rem;
   background: rgba(0, 0, 0, 0.3);
   border: 0.1rem solid #666666;

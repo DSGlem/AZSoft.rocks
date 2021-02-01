@@ -6,6 +6,16 @@
 
 <script>
 export default {
+  head: {
+    title: "Front-Endend page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Front-Endend description",
+      },
+    ],
+  },
   layout: "default",
   data() {
     return {

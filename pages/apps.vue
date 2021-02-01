@@ -6,6 +6,16 @@
 
 <script>
 export default {
+  head: {
+    title: "Apps page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Apps description",
+      },
+    ],
+  },
   layout: "default",
   data() {
     return {

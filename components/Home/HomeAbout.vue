@@ -10,7 +10,7 @@
           puzzle to solve, you should consider becoming a back end web
           developer.
         </p>
-        <button class="btn-play">
+        <button class="btn-play" aria-label="play video">
           <svg
             class="g-img-cover"
             viewBox="0 0 41 41"

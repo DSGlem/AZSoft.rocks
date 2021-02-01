@@ -8,6 +8,16 @@
 
 <script>
 export default {
+  head: {
+    title: "About page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "About description",
+      },
+    ],
+  },
   layout: "default",
   data() {
     return {
