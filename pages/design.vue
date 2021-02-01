@@ -6,6 +6,16 @@
 
 <script>
 export default {
+  head: {
+    title: "Design page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Design description",
+      },
+    ],
+  },
   layout: "default",
   data() {
     return {

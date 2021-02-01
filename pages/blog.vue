@@ -15,6 +15,16 @@
 </template>
 <script>
 export default {
+  head: {
+    title: "Blog page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Blog description",
+      },
+    ],
+  },
   data() {
     return {
       sections: [

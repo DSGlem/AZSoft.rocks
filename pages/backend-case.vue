@@ -9,3 +9,17 @@
     <BaseContact />
   </main>
 </template> 
+<script>
+export default {
+  head: {
+    title: "Backend-case page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Backend-case description",
+      },
+    ],
+  },
+};
+</script>

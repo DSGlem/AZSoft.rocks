@@ -1,13 +1,23 @@
 <template>
   <main>
     <BaseHero v-bind="hero"></BaseHero>
-    <AboutTeam />
+    <!-- <AboutTeam /> -->
     <BaseContact />
   </main>
 </template>
 
 <script>
 export default {
+  head: {
+    title: "About page",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "About description",
+      },
+    ],
+  },
   layout: "default",
   data() {
     return {
