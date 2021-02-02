@@ -7,9 +7,9 @@
           <CaseCard class="card" v-bind="item"> </CaseCard>
         </div>
         <template #prevArrow="arrowOption">
-          <div class="custom-arrow custom-arrow-prev">
+          <button class="btn custom-arrow custom-arrow-prev">
             <svg
-              class="g-img-contain"
+              class="g-img-contain arrow-icon__prev"
               viewBox="0 0 41 8"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -19,14 +19,19 @@
                 fill="#666666"
               />
             </svg>
-            {{ getCurrentSlide(arrowOption.currentSlide) }}
-          </div>
+            <span class="slider-counter__current">
+              {{ getCurrentSlide(arrowOption.currentSlide) }}
+            </span>
+          </button>
         </template>
         <template #nextArrow="arrowOption">
-          <div class="custom-arrow custom-arrow-next">
-            / {{ arrowOption.slideCount }}
+          <button class="btn custom-arrow custom-arrow-next">
+            <span class="slider-counter__separator">/</span>
+            <span class="slider-counter__total"
+              >{{ arrowOption.slideCount }}
+            </span>
             <svg
-              class="g-img-contain"
+              class="g-img-contain arrow-icon__next"
               viewBox="0 0 41 8"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +41,7 @@
                 fill="#FF4471"
               />
             </svg>
-          </div>
+          </button>
         </template>
       </VueSlickCarousel>
     </client-only>
@@ -247,6 +252,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 $margin: 1.5rem;
+$arrow-icon-margin: 2.5rem;
+$separator-margin: 0.5rem;
 .section {
   color: var(--color-font-primary);
   background-image: url("~assets/images/cases/bg.jpg");
@@ -271,11 +278,9 @@ $margin: 1.5rem;
   right: $margin;
   transform: translateY(-100%);
 
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  column-gap: 1.5rem;
+  padding: 0;
 
+  color: inherit;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1em;
@@ -287,11 +292,22 @@ $margin: 1.5rem;
     fill: var(--color-font-accent);
   }
 }
+
+.arrow-icon__prev {
+  margin-right: $arrow-icon-margin;
+}
+.arrow-icon__next {
+  margin-left: $arrow-icon-margin;
+}
+
+.slider-counter__separator {
+  margin-right: $separator-margin;
+}
+
 .custom-arrow.slick-disabled path {
   fill: #666;
 }
-
 .custom-arrow-prev {
-  transform: translate(-125%, -100%);
+  transform: translate(calc(-113% - #{$separator-margin}), -100%);
 }
 </style>
