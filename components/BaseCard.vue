@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <div class="image">
+    <a class="image" atia-label="link to post">
       <img class="g-img-cover" :src="image.link" :alt="image.alt" />
-    </div>
+    </a>
     <NuxtLink class="link" :to="link.to">{{ link.text }}</NuxtLink>
     <p class="description">{{ description }}</p>
   </div>
@@ -41,6 +41,16 @@ export default {
 
   @media (min-width: 992px) {
     font-size: 1.4rem;
+  }
+}
+
+.image {
+  display: block;
+  cursor: pointer;
+  filter: brightness(0.3);
+  transition: filter ease-in 0.3s;
+  &:hover {
+    filter: brightness(1);
   }
 }
 </style>
