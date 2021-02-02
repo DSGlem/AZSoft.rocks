@@ -204,11 +204,11 @@ export default {
   }
 }
 .category {
-  max-height: calc(100% - 5rem);
+  position: relative;
+  z-index: 1;
+  margin-top: -19rem;
 }
 .categories-list {
-  transform: translateY(-19rem);
-  bottom: 0;
   padding: 6rem 3rem;
   display: grid;
   gap: 3rem;
@@ -218,6 +218,7 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: 992px) {
+    column-gap: 7.5rem;
     padding: 7.6rem 10.5rem;
   }
 }

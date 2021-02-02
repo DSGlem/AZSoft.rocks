@@ -1,9 +1,9 @@
 <template>
   <div class="card">
-    <a class="image" atia-label="link to post">
+    <div class="image">
       <img class="g-img-cover" :src="image.link" :alt="image.alt" />
-    </a>
-    <NuxtLink class="link" :to="link.to">{{ link.text }}</NuxtLink>
+    </div>
+    <p class="link">{{ title }}</p>
     <p class="description">{{ description }}</p>
   </div>
 </template>
@@ -11,7 +11,7 @@
 export default {
   props: {
     image: Object,
-    link: Object,
+    title: String,
     description: String,
   },
 };
@@ -27,10 +27,6 @@ export default {
   text-decoration: none;
 
   transition: color ease-in-out 0.3s;
-
-  &:hover {
-    color: var(--color-font-accent);
-  }
 }
 
 .description {
@@ -41,16 +37,6 @@ export default {
 
   @media (min-width: 992px) {
     font-size: 1.4rem;
-  }
-}
-
-.image {
-  display: block;
-  cursor: pointer;
-  filter: brightness(0.3);
-  transition: filter ease-in 0.3s;
-  &:hover {
-    filter: brightness(1);
   }
 }
 </style>

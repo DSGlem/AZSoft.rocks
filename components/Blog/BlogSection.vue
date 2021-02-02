@@ -12,7 +12,7 @@
     </div>
     <div class="list">
       <BaseCard
-        v-for="(item, index) in list"
+        v-for="(item, index) in articles"
         :key="index"
         v-bind="item"
       ></BaseCard>
@@ -33,7 +33,7 @@ export default {
     },
     title: String,
     link: Object,
-    list: Array,
+    articles: Array,
   },
 };
 </script>
