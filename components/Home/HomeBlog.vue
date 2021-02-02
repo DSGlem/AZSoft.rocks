@@ -1,6 +1,6 @@
 <template>
   <section class="g-container g-section section">
-    <h3 class="g-title-secondary title">Services</h3>
+    <h2 class="g-title-secondary title">Services</h2>
 
     <div class="c-tab">
       <div>
@@ -57,7 +57,7 @@
           </VueSlickCarousel>
         </client-only>
         <CustomLink to="/design">Design</CustomLink>
-        <h5 class="subtitle">How To Measure UI/UX Design Impact On Business</h5>
+        <h3 class="subtitle">How To Measure UI/UX Design Impact On Business</h3>
         <p class="description">
           One of the stages of post-production of films, clips and promotional
           videos is color correction. With the help of color, you can change

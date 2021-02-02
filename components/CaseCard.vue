@@ -6,7 +6,7 @@
       alt="card background"
       loading="lazy"
     />
-    <h6 class="hover-animation title">{{ title }}</h6>
+    <p class="hover-animation title">{{ title }}</p>
     <p class="hover-animation description">{{ description }}</p>
     <div class="hover-animation icons">
       <img

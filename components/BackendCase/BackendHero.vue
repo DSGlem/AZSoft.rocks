@@ -100,6 +100,7 @@ $height: 12.5rem;
 }
 .list {
   margin-top: 4rem;
+  margin-bottom: 10rem;
   font-size: 14px;
   font-weight: 600;
   line-height: 1em;
@@ -107,6 +108,7 @@ $height: 12.5rem;
     margin-top: 1.5rem;
   }
   @media (min-width: 992px) {
+    margin-bottom: 14rem;
     font-size: 1.4rem;
   }
 }
