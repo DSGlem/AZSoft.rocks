@@ -1,7 +1,7 @@
 <template>
   <div class="tab">
     <div>
-      <h4 class="title">{{ title }}</h4>
+      <h3 class="title">{{ title }}</h3>
       <p class="description">{{ description }}</p>
       <div class="list">
         <div class="list__item" v-for="(item, index) in icons" :key="index">

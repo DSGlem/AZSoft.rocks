@@ -1,6 +1,6 @@
 <template>
   <section class="g-container g-section section">
-    <h3 class="g-title-secondary title">Blog</h3>
+    <h2 class="g-title-secondary title">Blog</h2>
 
     <client-only>
       <VueSlickCarousel class="slider" v-bind="settings">

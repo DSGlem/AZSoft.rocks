@@ -30,17 +30,17 @@
         </p>
       </div>
     </div>
-    <div class="form">
-      <h6 class="form__title">Do you want to discuss your project?</h6>
+    <form class="form">
+      <p class="form__title">Do you want to discuss your project?</p>
       <p class="form__subttitle">
         Leave your contact information and we will contact you within a few
         minutes
       </p>
-      <label class="c-input">
+      <label class="c-input" aria-label="your phone number">
         <input type="text" placeholder="Your phone number" />
       </label>
-      <button class="btn c-btn" type="button">Сall me back</button>
-    </div>
+      <button class="btn c-btn" type="submit">Сall me back</button>
+    </form>
   </section>
 </template>
 <style lang="scss" scoped>
@@ -112,6 +112,7 @@
   box-sizing: border-box;
   border-radius: 3rem;
   input {
+    width: 100%;
     color: white;
     padding: 1.8rem 3rem;
     border: none;
