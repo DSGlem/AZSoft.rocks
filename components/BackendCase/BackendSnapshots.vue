@@ -2,11 +2,11 @@
   <section class="g-container g-section section">
     <h2 class="g-title-secondary">Snapshots</h2>
     <div class="list">
-      <BaseCard
+      <BackendCard
         v-for="(item, index) in snapshots"
         :key="index"
         v-bind="item"
-      ></BaseCard>
+      ></BackendCard>
     </div>
   </section>
 </template>
@@ -20,10 +20,7 @@ export default {
             link: require("~/assets/images/backend-case/snapshot-1.jpg"),
             alt: "snapshot image",
           },
-          link: {
-            to: "/",
-            text: "Challenge",
-          },
+          title: "Challenge",
           description:
             "Manual trailer check-in/out processes; traditional and error-prone audit functions; increased bottlenecks in achieving lean manufacturing",
         },
@@ -32,10 +29,7 @@ export default {
             link: require("~/assets/images/backend-case/snapshot-2.jpg"),
             alt: "snapshot image",
           },
-          link: {
-            to: "/",
-            text: "Solutions",
-          },
+          title: "Solutions",
           description:
             "Built a fully integrated self-service kiosk application to streamline  check-in/out processes; developed asset and process audit automation apps to help employees deliver a higher-quality audit opinion",
         },
@@ -44,10 +38,7 @@ export default {
             link: require("~/assets/images/backend-case/snapshot-3.jpg"),
             alt: "snapshot image",
           },
-          link: {
-            to: "/",
-            text: "Benefits",
-          },
+          title: "Benefits",
           description:
             "Digitized check-in/out operations; enabled smart audits; accelerated speed-to-service; improved productivity",
         },
