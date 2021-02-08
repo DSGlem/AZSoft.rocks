@@ -60,6 +60,10 @@ export default {
   pointer-events: none;
 }
 .menu-wrapper {
+  // offset for iPhone 5/SE
+  position: relative;
+  top: 4rem;
+
   display: grid;
   grid-auto-flow: row;
   justify-content: center;

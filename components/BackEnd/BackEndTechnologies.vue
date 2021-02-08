@@ -1,5 +1,5 @@
 <template>
-  <div class="g-container g-section section">
+  <section class="g-container g-section section">
     <h3 class="g-title-secondary title">Back-End Technologies</h3>
     <VueSlickCarousel class="case-list" v-bind="settings" ref="slider">
       <div>
@@ -78,9 +78,9 @@
       </div>
 
       <template #prevArrow="arrowOption">
-        <div class="custom-arrow custom-arrow-prev">
+        <button class="btn custom-arrow custom-arrow-prev">
           <svg
-            class="g-img-contain"
+            class="g-img-contain arrow-icon__prev"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -90,14 +90,19 @@
               fill="#666666"
             />
           </svg>
-          {{ getCurrentSlide(arrowOption.currentSlide) }}
-        </div>
+          <span class="slider-counter__current">
+            {{ getCurrentSlide(arrowOption.currentSlide) }}
+          </span>
+        </button>
       </template>
       <template #nextArrow="arrowOption">
-        <div class="custom-arrow custom-arrow-next">
-          / {{ arrowOption.slideCount }}
+        <button class="btn custom-arrow custom-arrow-next">
+          <span class="slider-counter__separator">/</span>
+          <span class="slider-counter__total"
+            >{{ arrowOption.slideCount }}
+          </span>
           <svg
-            class="g-img-contain"
+            class="g-img-contain arrow-icon__next"
             viewBox="0 0 41 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -107,10 +112,10 @@
               fill="#FF4471"
             />
           </svg>
-        </div>
+        </button>
       </template>
     </VueSlickCarousel>
-  </div>
+  </section>
 </template>
 <script>
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
@@ -163,19 +168,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 $margin: 1.5rem;
-.section {
-  width: 100%;
-  max-width: calc(100vw - 20px); // 20px = (10px padding in conatiner) * 2
-  padding-bottom: calc(10rem - #{$margin});
-}
+$arrow-icon-margin: 2.5rem;
+$separator-margin: 0.5rem;
+$arrow-offsetY: 150%;
+$arrow-offsetY--desktop: 100%;
 .case-list {
+  position: relative;
   padding-top: calc(8rem - #{$margin});
   margin-left: -$margin;
   width: calc(100% + #{$margin * 2});
   min-height: 40rem;
-  // @media (min-width:992px) {
-  //     min-height: 35.re;
-  //     }
   div:focus {
     outline: none;
   }
@@ -183,27 +185,27 @@ $margin: 1.5rem;
 .custom-card {
   margin: $margin;
 }
+
 .custom-arrow {
   position: absolute;
   top: 0;
   right: $margin;
-  transform: translateY(200%);
+  transform: translateY($arrow-offsetY);
 
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  column-gap: 1.5rem;
+  padding: 0;
 
+  color: inherit;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1em;
+
   @media (min-width: 768px) {
-    transform: translateY(-100%);
+    transform: translateY(-$arrow-offsetY--desktop);
   }
   svg {
     width: 4rem;
+    height: 2rem;
   }
-
   & path {
     fill: var(--color-font-accent);
   }
@@ -212,10 +214,24 @@ $margin: 1.5rem;
   fill: #666;
 }
 
+.arrow-icon__prev {
+  margin-right: $arrow-icon-margin;
+}
+.arrow-icon__next {
+  margin-left: $arrow-icon-margin;
+}
+
+.slider-counter__separator {
+  margin-right: $separator-margin;
+}
+
 .custom-arrow-prev {
-  transform: translate(-125%, 200%);
+  transform: translate(calc(-113% - #{$separator-margin}), $arrow-offsetY);
   @media (min-width: 768px) {
-    transform: translate(-125%, -100%);
+    transform: translate(
+      calc(-113% - #{$separator-margin}),
+      -$arrow-offsetY--desktop
+    );
   }
 }
 </style>
