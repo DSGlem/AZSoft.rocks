@@ -45,10 +45,10 @@
   position: relative;
 
   &:hover {
-    pointer-events: all;
     .dropdown-body {
       opacity: 1;
       transform: translate(-50%, 0%);
+      pointer-events: all;
     }
     .dropdown-label {
       &:after {

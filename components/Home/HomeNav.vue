@@ -83,10 +83,10 @@ export default {
   position: relative;
 
   &:hover {
-    pointer-events: all;
     .dropdown-body {
       opacity: 1;
       transform: translateY(0%);
+      pointer-events: all;
     }
     .dropdown-label {
       &:after {
