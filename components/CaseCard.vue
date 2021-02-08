@@ -56,9 +56,13 @@ export default {
 
   transition: box-shadow ease-in 0.3s;
 
-  font-size: 1.4rem;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.2em;
+
+  @media (min-width: 992px) {
+    font-size: 1.4em;
+  }
 
   &::after {
     $width: 1.6rem;

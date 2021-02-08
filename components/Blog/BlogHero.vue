@@ -135,7 +135,7 @@ export default {
 .list {
   margin-top: 3rem;
   display: grid;
-  gap: 1rem 8.8rem;
+  gap: 1.6rem 8.8rem;
   justify-items: left;
 
   @media (min-width: 768px) {
