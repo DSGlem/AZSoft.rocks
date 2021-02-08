@@ -67,8 +67,10 @@ export default {
 }
 .options {
   display: grid;
-  row-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+  row-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 27rem));
+  grid-auto-rows: 1fr;
+  justify-content: space-between;
 }
 .options__item {
   position: relative;

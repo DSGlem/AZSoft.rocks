@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <a class="image" atia-label="link to post">
+    <NuxtLink to="/" class="image" aria-label="link to post">
       <img class="g-img-cover" :src="image.link" :alt="image.alt" />
-    </a>
+    </NuxtLink>
     <NuxtLink class="link" :to="link.to">{{ link.text }}</NuxtLink>
     <p class="description">{{ description }}</p>
   </div>
